@@ -1,0 +1,679 @@
+/* *** BOOK NOW - CONTACT FORM 7 CSS *** */
+.book-now-content-area {
+  background-color: black;
+  display: -webkit-box;
+  /* -webkit-justify-content: center; */
+  display: flex;
+  justify-content: center;
+} 
+
+.book-now-main {
+  padding-top: 25px;
+  background-color: black;
+  color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  padding-right: 2em;
+  padding-left: 2em;
+  position: relative;
+  left: -2000px;
+  /* transition: 1.5s ease-in-out; */
+}
+
+.wpcf7 {
+  display: -webkit-box;  
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.book-now-page1,
+.book-now-page2,
+.book-now-page3 {
+  width: 85vw;
+  display: -webkit-box;  
+  /* -webkit-box-direction: column; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.book-now-page3 {
+  height: 90vh;
+  overflow: hidden;
+}
+
+.book-now-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: row;  
+  flex-direction: row;
+  color: black;
+  height: 3.5em;
+  line-height: 2.3em;
+}
+
+.book-now-nav > button {
+  border-radius: 0px;
+  outline: none;
+  font-size: 1em;
+  /* display: -webkit-box;  
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center; */
+  border: none;
+  letter-spacing: 1px;
+}
+
+.book-now-nav > button:first-child {
+  background-color: white;
+  width: 75%;
+}
+
+.book-now-nav > button:last-child {
+  background-color: #fdee00;
+  width: 25%;
+}
+
+/* NAV TRANSITIONS */
+.open-book-now-nav {
+  width: 75%;
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+.close-book-now-nav {
+  width:25%;
+  /* overflow: hidden; */
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+/* BOOK NOW PAGE 1 */
+.is-charity,
+.num-dancers,
+.performance-length,
+.num-dancers {
+  margin-top: 3em;
+}
+
+.budget {
+  margin-top: 2em
+}
+
+span.wpcf7-form-control-wrap.performance-length,
+span.wpcf7-form-control-wrap.budget {
+  margin-top: 1em;
+}
+
+.is-charity-select {
+  display: -webkit-box;
+  -webkit-box-direction: row;
+  display: flex;
+  flex-direction: row;
+  padding-top: 12px;
+}
+
+.is-charity-select .selected {
+  border: 1.5px solid #fdee00;
+  background: #fdee00;
+  color: black;
+}
+
+.is-charity-select > button {
+  border: 1.5px solid white;
+  background: transparent;
+  border-radius: 0;
+  color: white;
+  /* display: -webkit-box;
+  -webkit-justify-content: center;
+  display: flex;
+  justify-content: center; */
+  font-size: 1.2rem;
+  height: 2.7em;
+  margin-right: 1.5em;
+  text-align: center;
+  outline: none;
+  width: 2.7em;
+  padding: 0px;
+}
+
+.performance-length-range,
+.budget-range,
+.num-dancers-range {
+  display: -webkit-box;  
+  -webkit-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0px;
+  padding-top: 12px;
+}
+
+#performance-slider-value,
+#budget-slider-value,
+#num-dancers-slider-value {
+  letter-spacing: 0px;
+  display: -webkit-box;  
+  -webkit-justify-content: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+.performance-num-dancers-container {
+  display: -webkit-box;  
+  -webkit-box-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-now-arrows {
+  display: -webkit-box;  
+  -webkit-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.book-now-next {
+  margin-top: 4em;
+
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.book-now-next:hover,
+.book-now-next:focus,
+.book-now-next:active {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+  border-color: white;
+}
+
+.book-now-prev {
+  margin-top: 2em;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.book-now-prev:hover,
+.book-now-prev:focus,
+.book-now-prev:active {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+  border-color: white;
+}
+
+.book-now-next,
+.book-now-prev {
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 0;
+  color: white;
+  font-size: 1rem;
+  height: 3.5em;
+  outline: none;
+  width: 3.5em;
+}
+
+.book-now-footer {
+  display: -webkit-box;  
+  -webkit-box-direction: column;
+  display: flex;
+  font-size: 1.3em;
+  font-weight: 200;
+  flex-direction: column;
+  height: 9em;
+  letter-spacing: 0px;
+  line-height: 1.8em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.book-now-email,
+.book-now-tel {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline dashed;
+  line-height: 1.4em;
+  text-underline-position: under;
+}
+
+.book-now-email:hover,
+.book-now-tel:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.book-now-email:visited,
+.book-now-tel:visited {
+  color: white;
+}
+
+.flex-column {
+  display: -webkit-box;  
+  -webkit-box-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+/* RANGE SLIDER TEST */
+/* #performance-slider {
+  width: 100% /* width outside of container */
+
+.slider {
+  -webkit-appearance: none; /* override default css styles */
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  background: none;
+  border: 1px dashed #fdee00 !important;
+  outline: none;
+  padding: 0px !important;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fdee00;
+  cursor: pointer;
+}
+
+/* BOOK NOW PAGE 2 */
+
+.wpcf7-text,
+.wpcf7-date {
+  width: -webkit-fill-available;
+  background: transparent;
+  border: 0 !important;
+  border-bottom: 3px solid white !important;
+  border-radius: 0px !important;
+  color: white !important;
+  letter-spacing: 1px;
+  padding: 8px !important;
+}
+
+.wpcf7-date:focus {
+  line-height: 1.4em;
+}
+
+.wpcf7-textarea {
+  background: transparent;
+  border: 3px solid white !important;
+  border-radius: 0px !important;
+  color: white !important;
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.wpcf7-textarea:focus, .wpcf7-submit:focus {
+  outline: none;
+}
+
+.wpcf7-text:focus,
+.wpcf7-date:focus {
+  color: white !important;
+  outline: none;
+}
+
+#book-now-submit {
+  width: -webkit-fill-available;  
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 0px;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 2px;
+  line-height: 2.3em;
+}
+
+#book-now-submit-container {
+  width: -webkit-fill-available;  
+  background: black;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}  
+
+.wpcf7-response-output.wpcf7-mail-sent-ok {
+  border: none;
+  font-size: 2em;
+}
+
+span.wpcf7-not-valid-tip {
+  color: #fdee00;
+  display: inherit;
+}
+
+/* CONTACT FORM 7 MSGS STOP */
+/* div.wpcf7-response-output,
+div.wpcf7-validations-errors {
+  display: none !important;
+}
+
+span.wpcf7-not-valid-tip {
+  display: none;
+} */
+
+/* X BUTTON */
+.x-wrapper {
+  display: -webkit-box;  
+  -webkit-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2em;
+}
+
+.x {
+  display: -webkit-box;  
+  display: flex;
+  background: transparent;
+  border: none;
+  width: 4em;
+  height: 4em;
+  cursor: pointer;
+  outline: none;
+
+  transition: transform 0.25s ease-in-out;
+}
+
+.x:hover {
+  transform: rotate(180deg);
+}
+
+.x:before {
+  content: '';
+  position: absolute;
+  display: -webkit-box;  
+  display: flex;
+  margin: auto;
+  width: 3.8em;
+  height: 3.8em;
+  border-top: 1.3px solid white;
+  transform: rotate(-45deg) translate(0px, 28px);
+  transform-origin: center;
+}
+
+.x:after {
+  content: '';
+  position: absolute;
+  display: -webkit-box;  
+  display: flex;
+  margin: auto;
+  width: 3.8em;
+  height: 3.8em;
+  border-top: 1.3px solid white;
+  transform: rotate(45deg) translate(1px, 27px);
+  transform-origin: center;
+}
+
+/* ************************ IPAD ************************ */
+@media (min-width: 415px) {
+
+}
+
+/* ************************ IPAD PRO - STANDARD DESKTOP SCREEN ************************ */
+@media only screen and (min-width: 769px) {
+  /* !!CHANGE CLASS NAME */
+  /* .content-area {
+    align-items: center;
+  } */
+
+  .book-now-main {
+    /* width: 1200px; */
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .book-now-page1 {
+    margin-top: 45px;
+  }
+
+  .book-now-nav { 
+    width: 40vw;
+    /* padding-left: 40px; */
+  }
+
+  .book-now-arrows {
+    margin-top: -5.2em;
+  }
+
+  .is-charity,
+  .num-dancers,
+  .performance-length,
+  .budget {
+    width: 40vw;
+  }
+
+  .charity-dancers-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .performance-num-dancers-container {
+    -webkit-box-direction: row;
+    flex-direction: row;
+  }
+
+  .book-now-personal-info-container {
+    display: -webkit-box;    
+    -webkit-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    height: 25vh;
+  }
+
+  .book-now-personal-info1 {
+    display: -webkit-box;    
+    -webkit-box-direction: column;
+    -webkit-justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    max-height: 15vh;
+    justify-content: space-between;
+  }
+
+  .book-now-personal-info2 {
+    display: -webkit-box;    
+    -webkit-box-direction: column;
+    -webkit-justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    max-height: 15vh;
+    justify-content: space-between;
+  }
+
+  .book-now-prev {
+    position: absolute;
+    margin-top: 5em;
+  }
+
+  .book-now-footer {
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+  }
+
+  .flex-column {
+    -webkit-box-direction: row;
+    -webkit-align-items: baseline;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .wpcf7-text,
+  .wpcf7-date {
+    width: 39vw;
+  }
+
+  .wpcf7-textarea {
+    height: 180px;
+    /* margin-top: -10px; */
+  }
+
+  #book-now-submit:hover {
+    color: black;
+  }
+
+  #book-now-submit-container:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    background: white;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  
+  #book-now-submit-container:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  #book-now-submit, #book-now-submit-container {
+    width: 39vw;
+  }
+
+  span.wpcf7-not-valid-tip {
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    display: block;
+  }
+}
+
+/* ************************ LARGE DESKTOP SCREEN ************************ */
+@media (min-width: 1200px) {
+  .book-now-main {
+    width: 1200px;
+  }
+
+  .book-now-page1,
+  .book-now-page2 {
+    width: 1080px;
+  }
+
+  .book-now-nav {
+    width: 500px;
+    /* padding-left: 40px; */
+  }
+
+  .is-charity,
+  .num-dancers,
+  .performance-length,
+  .budget,
+  .book-now-personal-info1,
+  .book-now-personal-info2 {
+    width: 500px;
+  }
+
+  .wpcf7-text,
+  .wpcf7-date,
+  .wpcf7-submit {
+    width: 490px;
+  }
+}
+
+/* ********** FADE TRANSITIONS ********** */
+.fade-in {
+  display: block;
+  -webkit-animation: fade-in 0.3s ease-out;
+  -moz-animation: fade-in 0.3s ease-out;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 0.3s ease-out;
+  -moz-animation: fade-out 0.3s ease-out;
+}
+
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* 
+.slide {
+  -webkit-animation: slide 0.3s forwards;
+  -moz-animation: slide 0.3s forwards;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    left: -1000px;
+  }
+}
+@-moz-keyframes slide {
+  100% {
+    left: 0;
+  }
+} */

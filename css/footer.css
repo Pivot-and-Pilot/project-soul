@@ -1,0 +1,89 @@
+.theme-dark {
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+.footer-container {
+  position: relative;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  max-width: 320px;
+  padding: 6em 0 2em;
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.footer-container h2 {
+  line-height: 1;
+}
+
+.custom-social {
+  display: flex;
+  margin-bottom: 40px;
+  height: 60px;
+}
+
+.custom-social > img {
+  display: flex;
+}
+
+.custom-social-fb {
+  height: 100%;
+}
+
+.custom-social-instagram {
+  height: 54px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.custom-social-twitter {
+  height: 52px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.custom-social-youtube {
+  height: 55px;
+  padding-top: 2px;
+}
+
+.custom-social > a, .custom-social > a:visited {
+  color: white;
+  text-decoration: none;
+  height: 60px;
+}
+
+.footer-contact > a, .footer-contact > a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* ************************ IPAD PRO - STANDARD DESKTOP SCREEN ************************ */
+@media only screen and (min-width: 769px) {
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 100%;
+      margin-left: 55px;
+      margin-right: 55px;
+      padding-top: 200px;
+    }
+
+    .footer-contact {
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-flex-bottom {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+    }
+    .move-content-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+}
+

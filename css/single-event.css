@@ -1,0 +1,367 @@
+
+#tribe-events-content {
+  margin: 0;
+}
+.tribe-events-single > .single-event-feature-image {
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+.tribe-events-single .single-event-feature-image .tribe-events-event-image > img {
+  width: 100%;
+  object-fit: cover;
+}
+.tribe-events-single .single-event-feature-image .single-event-feature-image-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+}
+.single-event-time {
+  width: 45vw;
+  position: relative;
+  top: -150px;
+  background-color: #fcec33;
+  text-align: center;
+  padding-top: 20px;
+  height: 150px;
+}
+.single-event-time h2 {
+  color: #000;
+  text-align: left;
+  margin: 0; 
+  font-size: 40px;
+  padding-left: 10px;
+}
+.tribe-event-date-start {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.tribe-event-time {
+  font-size: 40px;
+}
+.single-event-time h2 .single-event-month-date {
+  font-size: 120px;
+  margin-left: -10px;
+  margin-bottom: -30px;
+}
+#tribe-events-header ul.single-event-page-nav {
+  position: absolute;
+  top: 800px;
+  right: 10%;
+  height: 50px;
+  width: 70px;
+  display: flex;
+  flex-direction: row;
+}
+#tribe-events-header ul.single-event-page-nav li.single-event-page-nav-prev {
+  background-color: transparent;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+#tribe-events-header ul.single-event-page-nav li.single-event-page-nav-next {
+  background-color: transparent;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.single-event-prev-arrow {
+  height: 25px;
+  width: 25px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  transform: rotate(-45deg) translateY(10px);
+}
+.single-event-next-arrow {
+  height: 25px;
+  width: 25px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(45deg) translateY(10px);
+}
+.tribe-events-single-event-title {
+  padding: 0 10%;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #000;
+}
+.single-tribe_events .tribe-events-single-event-description {
+  padding: 0 10%;
+  font-size: 30px;
+  color: #000;
+}
+.single-event-page-buy-ticket {
+  margin: 0 auto;
+  width: 400px;
+  background-color: #000;
+  text-transform: uppercase;
+  position: relative;
+  height: 50px;
+}
+.single-event-page-buy-ticket > a {
+  color: #fcec33;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 50px;
+  position: absolute;
+  transform: translate(-5px, -20px);
+  letter-spacing: 5px;
+}
+.tribe-events-back {
+  margin: 0;
+  padding-top: 15px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.tribe-events-back > a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  letter-spacing: 2px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.footer-container {
+  margin-top: 0;
+}
+
+/* ====================================================== */
+/* ======================= LARGE ======================== */
+/* ====================================================== */
+
+@media only screen and (min-width: 1050px) {
+
+  .tribe-events-single > .single-event-feature-image {
+    height: 700px;
+  }
+  .single-event-book-now {
+    position: absolute;
+    top: 300px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 3px;
+    transform: rotate(-90deg);
+    left: -23px;
+  }
+  .single-event-book-now:hover {
+    color: #fff;
+  }
+  .single-event-time h2 {
+    color: #000;
+    text-align: left;
+    margin: 0; 
+    font-size: 40px;
+    padding-left: 10px;
+  }
+  .tribe-event-date-start {
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  .tribe-event-time {
+    font-size: 40px;
+  }
+  .single-event-time h2 .single-event-month-date {
+    font-size: 120px;
+    margin-left: -10px;
+    margin-bottom: -30px;
+  }
+  #tribe-events-header ul.single-event-page-nav {
+    position: absolute;
+    top: 800px;
+    right: 10%;
+    height: 50px;
+    width: 70px;
+    display: flex;
+    flex-direction: row;
+  }
+  .tribe-events-single-event-title {
+    font-size: 50px;
+  }
+}
+/* ====================================================== */
+/* ======================= MEDIUM ======================= */
+/* ====================================================== */
+
+@media only screen and (min-width: 760px) and (max-width: 1050px) {
+  #tribe-events-header ul.single-event-page-nav {
+    top: 600px;
+  }
+  .single-event-book-now {
+    display: none;
+  }
+  .tribe-events-single > .single-event-feature-image {
+    height: 500px;
+  }
+  .single-event-time h2 .single-event-month-date {
+    font-size: 80px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .single-event-time h2 {
+    color: #000;
+    text-align: left;
+    margin: 0; 
+    font-size: 30px;
+    padding-left: 0;
+  }
+  .tribe-event-date-start {
+    text-transform: uppercase;
+    font-size: 30px;
+  }
+  .tribe-event-time {
+    font-size: 30px;
+  }
+  .tribe-events-single-event-title {
+    font-size: 40px;
+  }
+}
+
+/* ====================================================== */
+/* ======================= SMALL ======================== */
+/* ====================================================== */
+
+@media only screen and (max-width: 760px) {
+  #tribe-events-header ul.single-event-page-nav {
+    top: 350px;
+  }
+  .single-event-book-now {
+    display: none;
+  }
+  .tribe-events-single > .single-event-feature-image {
+    height: 300px;
+  }
+  .tribe-events-single .single-event-feature-image .tribe-events-event-image > img {
+    height: 100%;
+  }
+  .single-tribe_events .tribe-events-event-image {
+    height: 100%;
+  }
+  .single-event-time {
+    width: 55vw;
+    position: relative;
+    top: -99px;
+    background-color: #fcec33;
+    text-align: center;
+    padding-top: 0px;
+    height: 100px;
+  }
+  .single-event-time h2 .single-event-month-date {
+    font-size: 60px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .single-event-time h2 {
+    color: #000;
+    text-align: left;
+    margin: 0; 
+    font-size: 20px;
+    padding-left: 0;
+  }
+  .tribe-event-date-start {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .tribe-event-time {
+    font-size: 20px;
+  }
+  .tribe-events-single-event-title {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .single-tribe_events .tribe-events-single-event-description {
+    font-size: 20px;
+  }
+  .single-event-page-buy-ticket {
+    margin: 0 auto;
+    width: 80vw;
+    background-color: #000;
+    text-transform: uppercase;
+    position: relative;
+    height: 50px;
+  }
+  .single-event-page-buy-ticket > a {
+    color: #fcec33;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    transform: translate(-4px, -15px);
+    letter-spacing: 5px;
+  }
+} 
+/* ====================================================== */
+/* ==================== EXTRA SMALL ===================== */
+/* ====================================================== */
+
+@media only screen and (max-width: 400px) {
+  #tribe-events-header ul.single-event-page-nav {
+    top: 350px;
+  }
+  .tribe-events-single > .single-event-feature-image {
+    height: 300px;
+  }
+  .tribe-events-single .single-event-feature-image .tribe-events-event-image > img {
+    height: 100%;
+  }
+  .single-tribe_events .tribe-events-event-image {
+    height: 100%;
+  }
+  .single-event-time {
+    width: 55vw;
+    position: relative;
+    top: -69px;
+    background-color: #fcec33;
+    text-align: center;
+    padding-top: 0px;
+    height: 70px;
+  }
+  .single-event-time h2 .single-event-month-date {
+    font-size: 45px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .single-event-time h2 {
+    color: #000;
+    text-align: center;
+    margin: 0; 
+    font-size: 15px;
+    padding-left: 0;
+  }
+  .tribe-event-date-start {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .tribe-event-time {
+    font-size: 15px;
+  }
+  .tribe-events-single-event-title {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .single-tribe_events .tribe-events-single-event-description {
+    font-size: 20px;
+  }
+  .single-event-page-buy-ticket {
+    margin: 0 auto;
+    width: 80vw;
+    background-color: #000;
+    text-transform: uppercase;
+    position: relative;
+    height: 50px;
+  }
+  .single-event-page-buy-ticket > a {
+    color: #fcec33;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    transform: translate(-4px, -12px);
+    letter-spacing: 5px;
+  }
+}

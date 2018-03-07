@@ -1,0 +1,36 @@
+/* Landing Page CSS */
+
+.landing-background {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100vw;
+}
+
+.landing-title {
+  margin-top: 0px; /* TODO: get rid of margin above on p tag */
+  font-size: 2.3em;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+.landing-description {
+  font-size: 0.9em;
+}
+
+#landing-yellow-square {
+  background-color: #fdee00;
+  height: 12em;
+  width: 12em;
+  opacity: 0.4;
+}
+
+/* DESKTOP Landing Page CSS */
+
+@media (min-width: 1025px) {
+  #landing-yellow-square {
+    height: 24em;
+    width: 24em;
+  }
+}
